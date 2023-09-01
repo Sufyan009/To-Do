@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Crud from "./Crud";
+import Todos from "./Todos";
 
 function App() {
+  // const users = [
+  //   { name: "Ali", age: 25 },
+  //   { name: "Sehbaz", age: 30 },
+  //   { name: "Jerry", age: 28 },
+  //   { name: "Khan", age: 22 },
+  //   { name: "Malik", age: 35 }
+  // ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      {/* <Todos /> */}
+      <Crud />
+      {/* {users.map((user, key) =>{
+        return(
+          <User name={user.name}  age={user.age}/>
+        );
+      })} */}
     </div>
   );
 }
+
+// const User = (props) =>{
+//   return(
+//     <h2>{props.name} {props.age}</h2>
+
+//   );
+
+// }
 
 export default App;
